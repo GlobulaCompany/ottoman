@@ -1,9 +1,12 @@
 import React from 'react';
 import FooterBar from './FooterBar'; 
 import Sidebar from './Sidebar';
+import './App.css';
 
 
-const App = () => (
+const App = () => {
+ 
+  return (
   <div className="flex flex-col min-h-screen">
     <div className="flex bg-gray-300">
       <div className="flex-1 bg-gray-900 pl-8">
@@ -11,13 +14,19 @@ const App = () => (
           <p className="text-white text-3xl font-bold pt-2">OTTOMAN</p>
         </div>
 
+
         <Sidebar />
         <div className="flex justify-center items-center">
           <div className="w-full sm:w-full pl-3 mt-2 items-center">
             <div className="bg-gray-800 text-white">
               <div className="p-4">
                 <div className='flex justify-center'>
-                  <img src="images/securityLogo.jpeg" alt="piloe" style={{width:'200px',height:'200px'}} className="rounded-full object-cover mb-4 mr-10" />
+                  <div className='ring ml-2 mr-10'></div>
+                  <div className='ring ml-2 mr-10'></div>
+                  <div className='ring ml-2 mr-10'></div>
+                  <div className='ring ml-2 mr-10'></div>
+                  <img  src="images/securityLogo.jpeg" alt="piloe" style={{width:'200px',height:'200px'}} className="rounded-full object-cover ml-2 mr-10" />
+
                 </div>
               </div>
             </div>
@@ -72,6 +81,7 @@ const App = () => (
     </div>
     <FooterBar />
   </div>
-);
+  );
+}
 
 export default App;
