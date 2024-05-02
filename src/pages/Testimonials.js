@@ -19,17 +19,17 @@ const Testimonials = () => {
                         {/* Testimonial 1 */}
                         <div className="mb-6">
                             <p className="text-sm mb-2">"Outstanding security guard services. Vigilant, professional, and courteous guards. Highly recommend!"</p>
-                            <p className="text-xs">- John Doe, CEO</p>
+                            <p className="text-xs">- GEORGE ONYANGO ODHIAMBO</p>
                         </div>
                         {/* Testimonial 2 */}
                         <div className="mb-6">
                             <p className="text-sm mb-2">"Professional and reliable security guards. Felt safe knowing they were on duty."</p>
-                            <p className="text-xs">- Jane Smith, Marketing Manager</p>
+                            <p className="text-xs">- JOHN NYAUCHO ONDIEKI</p>
                         </div>
                         {/* Testimonial 3 */}
                         <div className="mb-6">
                             <p className="text-sm mb-2">"Top-notch security services. Proactive approach and attention to detail."</p>
-                            <p className="text-xs">- Michael Johnson, IT Director</p>
+                            <p className="text-xs">- NELSON NYUNJA</p>
                         </div>
                         {/* Add more testimonials as needed */}
                     </div>
