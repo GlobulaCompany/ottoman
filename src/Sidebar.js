@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { MdOutlineDashboard } from 'react-icons/md';
 import { AiOutlineUser, AiOutlineTeam, AiOutlineHeart } from 'react-icons/ai';
 import { FiMessageSquare, FiFolder } from 'react-icons/fi';
-import { RiSettings4Line } from 'react-icons/ri';
-import { TbReportAnalytics } from 'react-icons/tb';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -52,42 +50,7 @@ const Sidebar = () => {
             <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Services</span>
           </a>
         </li>
-        <li className="mb-5">
-          <a href="/about" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <FiMessageSquare size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>About Us</span>
-          </a>
-        </li>
-        <li className="mb-5">
-          <a href="/testimonials" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <FiFolder size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Testimonials</span>
-          </a>
-        </li>
-        <li className="mb-5">
-          <a href="/team" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <AiOutlineTeam size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Meet Our Team</span>
-          </a>
-        </li>
-        <li className="mb-5">
-          <a href="/blog" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <AiOutlineHeart size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Blog/News</span>
-          </a>
-        </li>
-        <li className="mb-5">
-          <a href="/faqs" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <RiSettings4Line size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>FAQs</span>
-          </a>
-        </li>
-        <li className="mb-5">
-          <a href="/security" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <TbReportAnalytics size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Security Measures</span>
-          </a>
-        </li>
+        {/* Add more manual entries for other modules */}
       </ul>
     </div>
   );
