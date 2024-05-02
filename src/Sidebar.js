@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { MdOutlineDashboard } from 'react-icons/md';
 import { AiOutlineUser, AiOutlineTeam, AiOutlineHeart } from 'react-icons/ai';
 import { FiMessageSquare, FiFolder } from 'react-icons/fi';
@@ -54,10 +53,10 @@ const Sidebar = () => {
       <ul className="list-none p-0">
         {modules.map((module, index) => (
           <li key={index} className="mb-5">
-            <Link to={module.link} className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
+            <a href={module.link} className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
               <module.icon size={20} className="mt-2 mr-2 text-yellow-500" />
               <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>{module.name}</span>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

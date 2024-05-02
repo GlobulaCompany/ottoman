@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterBar from './FooterBar'; 
+import Sidebar from './Sidebar';
 
 
 const App = () => (
@@ -10,6 +11,7 @@ const App = () => (
           <p className="text-white text-3xl font-bold pt-2">OTTOMAN</p>
         </div>
 
+        <Sidebar />
         <div className="flex justify-center items-center">
           <div className="w-full sm:w-full pl-3 mt-2 items-center">
             <div className="bg-gray-800 text-white">
