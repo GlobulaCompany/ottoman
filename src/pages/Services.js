@@ -114,6 +114,8 @@ const Services = () => {
             </div>
           </div>
         </div> 
+        <hr style={{ borderColor: '#FFD700' }}></hr>
+
       <FooterBar /></div>
      );
 }

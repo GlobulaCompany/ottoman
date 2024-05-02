@@ -49,6 +49,8 @@ const SecurityMeasures = () => {
                     </div>
                 </div>
             </div>
+        <hr style={{ borderColor: '#FFD700' }}></hr>
+
             {/* Footer */}
             <FooterBar />
         </div>
