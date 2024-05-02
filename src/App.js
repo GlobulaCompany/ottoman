@@ -5,8 +5,9 @@ import './App.css';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'; 
 
 const App = () => {
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["images/officer.jpeg", "images/womanOfficer.jpeg"];
+  const images = ["images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg"];
 
   const goToPreviousSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -61,34 +62,37 @@ const App = () => {
           <div className="bg-gray-800 text-white">
             <div className="p-4">
               <h5 className="text-xl font-bold mb-2">VISION</h5>
-              <p className="text-sm">To be a leading professional security company in the provision of security services with integrity within the Western Kenya and beyond.</p>
+              <p className="text-sm">To be a leading professional security company in the provision of security services with integrity within the Kenya and beyond.</p>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
+
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white">
               <div className="p-4">
-                <img src="images/team.jpeg" alt="team" style={{width:'250px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
+                <img src="images/team.jpeg" alt="team" style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
                 <h5 className="text-xl font-bold mb-2">Team Of Officers</h5>
-                <p className="text-sm mb-4">Ottoman strives to provide carefully selected, trained, motivated, and committed Security Officials who report for duty on time, who are sober, alert, neat in appearance, proactive and capable of responding to instructions. Training and development, at all levels, are regarded as essential in the delivery of a quality service to customers, ensuring that personnel are competent and have the opportunity to advance in the company.</p>
+                <p className="text-sm mb-4">Ottoman is committed to providing exceptional security services by delivering personalized, high quality and cost effective security solutions that meets the needs of our clients</p>
               </div>
             </div>
           </div>
+          
 
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white">
               <div className="p-4">
                 <div className='flex'>
                   
-                <button onClick={goToPreviousSlide}   className="mr-2"><MdKeyboardArrowLeft size={29} /></button>
-                  <img src={images[currentImageIndex]}  style={{width:'250px' ,height:'auto'}}  alt="officer" className="  border border-green-500   object-cover mb-4" />
-                  <button onClick={goToNextSlide} className="ml-2"><MdKeyboardArrowRight size={29} /></button> {/* Right button with icon */}
+                <button onClick={goToPreviousSlide}  ><MdKeyboardArrowLeft size={29} /></button>
+                  <img src={images[currentImageIndex]}  style={{width:'200px' ,height:'auto'}}  alt="officer" className="  border border-green-500   object-cover mb-4" />
+                <button onClick={goToNextSlide} ><MdKeyboardArrowRight size={29} /></button>
  
  
                 </div>
                 <p className="text-sm mb-2 text-yellow-200">Slide {currentImageIndex + 1} of {images.length}</p>
+   
 
                 <h5 className="text-xl font-bold mb-2">Guard On Duty</h5>
                 <p className="text-sm mb-4">Ottoman strives to provide carefully selected, trained, motivated, and committed Security Officials who report for duty on time, who are sober, alert, neat in appearance, proactive and capable of responding to instructions. Training and development, at all levels, are regarded as essential in the delivery of a quality service to customers, ensuring that personnel are competent and have the opportunity to advance in the company. Well-trained security personnel's instinct and judgment beat even the most advanced technology, making 'Manned Guarding' the most crucial aspect of any effective security deployment strategy. All security personnel are selected through a stringent selection process that includes detailed background checks. Further, our personnel undergo a rigorous 160-hour training program to meet industry and region-specific security norms. Owing to an innovative approach and a dedicated workforce, we have an industry-best client retention rate of 99.5%. Recruitment and training process; We follow a stringent selection process with background checks, fingerprinting and police verification so that only the very best secure your business.</p>

@@ -18,18 +18,23 @@ const Testimonials = () => {
                         <h2 className="text-2xl font-bold mb-4">What Our Clients Say</h2>
                         {/* Testimonial 1 */}
                         <div className="mb-6">
-                            <p className="text-sm mb-2">"Outstanding security guard services. Vigilant, professional, and courteous guards. Highly recommend!"</p>
-                            <p className="text-xs">- GEORGE ONYANGO ODHIAMBO</p>
+                            <p className="text-sm mb-2">"The Guards are disciplined"</p>
+                            <p className="text-xs">- Mowlem Heights Adjustment- Rose Nekesa</p>
                         </div>
                         {/* Testimonial 2 */}
                         <div className="mb-6">
-                            <p className="text-sm mb-2">"Professional and reliable security guards. Felt safe knowing they were on duty."</p>
-                            <p className="text-xs">- JOHN NYAUCHO ONDIEKI</p>
+                            <p className="text-sm mb-2">"Ottoman has been securing our clinics and so far their seamless services are exceptional. I would vouch for them any time"</p>
+                            <p className="text-xs">- Nyawita Medical Clinic- Jared Otieno</p>
                         </div>
                         {/* Testimonial 3 */}
                         <div className="mb-6">
-                            <p className="text-sm mb-2">"Top-notch security services. Proactive approach and attention to detail."</p>
-                            <p className="text-xs">- NELSON NYUNJA</p>
+                            <p className="text-sm mb-2">"They have secured our facilities at Milimani area. Their guards are proactive when exercising their security duties"</p>
+                            <p className="text-xs">- Museum View Hotel- Mary</p>
+                        </div>
+
+                        <div className="mb-6">
+                            <p className="text-sm mb-2">"Ottoman exercises professionalism at its best"</p>
+                            <p className="text-xs">-Adongo- Janet Adongo</p>
                         </div>
                         {/* Add more testimonials as needed */}
                     </div>

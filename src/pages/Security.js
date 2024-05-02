@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Sidebar from '../Sidebar';
 import FooterBar from '../FooterBar'; 
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'; 
+
 
 const SecurityMeasures = () => {
+
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg"];
+  
+    const goToPreviousSlide = () => {
+      setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    };
+  
+    const goToNextSlide = () => {
+      setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    };
+  
+    useEffect(() => {
+      const interval = setInterval(goToNextSlide, 2000); // Change slide every 3 seconds (adjust as needed)
+  
+      return () => clearInterval(interval);
+    }, []);
+  
     return (
         <div className="flex flex-col min-h-screen bg-gray-900">
             {/* Top bar */}
@@ -23,9 +43,16 @@ const SecurityMeasures = () => {
 
                         </div>
                         <div className="mb-6">
-                            <h3 className="text-lg font-bold mb-2">Trained Security Dogs</h3>
-                            <p className="text-sm">Our highly trained security dogs provide an added layer of protection, detecting intruders and illegal substances with precision.</p>
-                            <img src="images/dogs.jpeg" alt="Female Officer" className="w-24 h-26 border border-green-500 object-cover mb-4"  />
+                  <h3 className="text-lg font-bold mb-2">Trained Security Dogs</h3>
+                    <p className="text-sm">Our highly trained security dogs provide an added layer of protection, detecting intruders and illegal substances with precision.</p>
+                    <div className='flex'>
+                  
+                  <button onClick={goToPreviousSlide}   className="mr-2"><MdKeyboardArrowLeft size={29} /></button>
+                    <img src={images[currentImageIndex]}  style={{width:'250px' ,height:'auto'}}  alt="dogs" className="  border border-green-500   object-cover mb-4" />
+                  <button onClick={goToNextSlide} className="ml-2"><MdKeyboardArrowRight size={29} /></button>
+   
+                  </div>
+                <p className="text-sm mb-2 text-yellow-200">Slide {currentImageIndex + 1} of {images.length}</p>
 
                         </div>
                         <div className="mb-6">
@@ -36,7 +63,7 @@ const SecurityMeasures = () => {
                         </div>
                         <div className="mb-6">
                             <h3 className="text-lg font-bold mb-2">Fire Extinguishers</h3>
-                            <p className="text-sm">We equip your premises with high-quality fire extinguishers and provide training on their proper use to ensure quick response and fire safety.</p>
+                            <p className="text-sm">we equip your premises with high quality fire extinguishers, servicing and training on their proper use to ensure timely response on fire disasters.</p>
                             <img src="images/fireExtinguisher.jpeg" alt="Female Officer" className="w-24 h-26 border border-green-500 object-cover mb-4"  />
 
                         </div>

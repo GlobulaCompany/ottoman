@@ -106,6 +106,8 @@ const About = () => {
 
                         <h2 className="text-2xl font-bold mb-4">OTTOMAN SGS DIRECTORS & KEY PERSONNEL</h2>
                         <h6 style={{color:' #FFD700'}}>GEORGE ONYANGO ODHIAMBO</h6>
+                    <img src="images/georgeMD.jpeg" alt="team" style={{width:'250px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
+
                         <p className="text-sm mb-6">
                                   Mr. Odhiambo is the Managing Director of Ottoman. He is an accomplished criminologist with
                                 close to 10 years progressive experience in Security and Forensic Investigations. He is experienced in
@@ -170,8 +172,16 @@ const About = () => {
                         appraisals, training, deployment and supervision of the guards on duty. Currently Pavin holds the
                         position of Security Supervisor 1 in the Operations Department. 
                           </p> 
+
+                        <h6 style={{ color: '#FFD700' }}>ALLAN DOUGLAS</h6>
+                        <p className="text-sm mb-6">
+                        Allan Douglas is a dedicated member of the Security and Governance Society (SGS) at Ottoman Security. With a background in law enforcement and security management, Allan brings valuable expertise in risk assessment, crisis management, and security strategy development. He is known for his attention to detail and proactive approach to security challenges. Allan is committed to ensuring the safety and security of clients and their assets through comprehensive security solutions and vigilant monitoring.
+                        </p>
+
                         
    
+
+
 
                     </div>
 
