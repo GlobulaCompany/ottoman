@@ -3,7 +3,6 @@ import { MdOutlineDashboard } from 'react-icons/md';
 import { AiOutlineUser, AiOutlineTeam, AiOutlineHeart } from 'react-icons/ai';
 import { FiMessageSquare, FiFolder } from 'react-icons/fi';
 import { RiSettings4Line } from 'react-icons/ri';
-import { TbReportAnalytics } from 'react-icons/tb';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
