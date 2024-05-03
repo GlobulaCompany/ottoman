@@ -76,25 +76,9 @@ const App = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 flex">
 
 
-        <div className="w-full sm:w-auto pl-3 mt-2">
-            <div className="bg-gray-800 text-white ">
-            <span className="text    mb-2">Ottoman Dogs</span>
-
-              <div className="p-4 flex">
-                <button onClick={goToPreviousDogs}  ><MdKeyboardArrowLeft size={29} /></button>
-                <img src={dogs[currentDogsIndex]}  style={{width:'200px' ,height:'auto'}}  alt="dogs" className="  border border-green-500   object-cover mb-4" />
-                <button onClick={goToNextDogs} ><MdKeyboardArrowRight size={29} /></button>
-
-
-              </div>
-              <p className="text-sm mb-2 text-yellow-200">Slide {currentDogsIndex + 1} of {dogs.length}</p>
-
-            </div>
-          </div>
-          
 
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white">
@@ -126,6 +110,23 @@ const App = () => {
               </div>
             </div>
           </div>
+
+        <div className="w-full sm:w-auto pl-3 mt-2">
+            <div className="bg-gray-800 text-white ">
+            <span className="text    mb-2">Ottoman Dogs</span>
+
+              <div className="p-4 flex">
+                <button onClick={goToPreviousDogs}  ><MdKeyboardArrowLeft size={29} /></button>
+                <img src={dogs[currentDogsIndex]}  style={{width:'200px' ,height:'auto'}}  alt="dogs" className="  border border-green-500   object-cover mb-4" />
+                <button onClick={goToNextDogs} ><MdKeyboardArrowRight size={29} /></button>
+
+
+              </div>
+              <p className="text-sm mb-2 text-yellow-200">Slide {currentDogsIndex + 1} of {dogs.length}</p>
+
+            </div>
+          </div>
+          
         </div>
 
         <hr style={{ borderColor: '#FFD700' }}></hr>

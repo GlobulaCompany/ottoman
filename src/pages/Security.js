@@ -39,7 +39,7 @@ const SecurityMeasures = () => {
                         <div className="mb-6">
                             <h3 className="text-lg font-bold mb-2">CCTV Surveillance</h3>
                             <p className="text-sm">We utilize state-of-the-art CCTV surveillance systems to monitor and protect your premises 24/7.</p>
-                            <img src="images/cctv.jpeg" alt="Female Officer" className="w-24 h-26 border border-green-500 object-cover mb-4"  />
+                            <img src="images/cctv.jpeg" style={{width:'230px' ,height:'auto'}} alt="Female Officer" className=" border border-green-500 object-cover mb-4"  />
 
                         </div>
                         <div className="mb-6">
@@ -58,19 +58,19 @@ const SecurityMeasures = () => {
                         <div className="mb-6">
                             <h3 className="text-lg font-bold mb-2">Alarm Systems</h3>
                             <p className="text-sm">We install advanced alarm systems that instantly alert our response teams in case of any security breach or emergency.</p>
-                            <img src="images/alarm.jpeg" alt="Female Officer" className="w-24 h-26 border border-green-500 object-cover mb-4"  />
+                            <img src="images/alarm.jpeg" alt="Female Officer"style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4"  />
 
                         </div>
                         <div className="mb-6">
                             <h3 className="text-lg font-bold mb-2">Fire Extinguishers</h3>
                             <p className="text-sm">we equip your premises with high quality fire extinguishers, servicing and training on their proper use to ensure timely response on fire disasters.</p>
-                            <img src="images/fireExtinguisher.jpeg" alt="Female Officer" className="w-24 h-26 border border-green-500 object-cover mb-4"  />
+                            <img src="images/fireExtinguisher.jpeg" alt="Female Officer" style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4"  />
 
                         </div>
                         <div className="mb-6">
                             <h3 className="text-lg font-bold mb-2">Electric Fencing</h3>
                             <p className="text-sm">Our electric fencing systems serve as a formidable barrier, deterring intruders and enhancing the security of your property.</p>
-                            <img src="images/securityWire.jpeg" alt="Female Officer" className="w-24 h-26 border border-green-500 object-cover mb-4"  />
+                            <img src="images/securityWire.jpeg" alt="Female Officer" style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4"  />
 
                         </div>
                     </div>
