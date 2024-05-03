@@ -27,7 +27,7 @@ const App = () => {
 
   useEffect(() => {
     const interval = setInterval(goToNextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
-    const interval2 = setInterval(goToNextDogs, 4000); // Change slide every 3 seconds (adjust as needed)
+    const interval2 = setInterval(goToNextDogs, 2000); // Change slide every 3 seconds (adjust as needed)
 
     return () => clearInterval(interval, interval2);
   }, []);
