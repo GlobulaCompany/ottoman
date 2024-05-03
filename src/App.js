@@ -8,8 +8,8 @@ const App = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentDogsIndex, setCurrentDogsIndex] = useState(0);
-  const images = ["images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg"];
-  const dogs = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg"];
+  const images = ["images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg","images/officer2.jpeg","images/officer3.jpeg"];
+  const dogs = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg","images/dogs4.jpeg",];
 
   const goToPreviousSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -35,7 +35,7 @@ const App = () => {
   return (
   <div className="flex flex-col min-h-screen">
     <div className="flex bg-gray-300">
-      <div className="flex-1 bg-gray-900 pl-8">
+      <div className="flex-1 bg-gray-900 pl-8 ">
         <div style={{backgroundColor: '#1a365d'}} className='flex justify-center fixed top-0 w-full left-1/2 transform -translate-x-1/2'>
           <p className="text-white text-3xl font-bold pt-2">OTTOMAN</p>
         </div>
@@ -44,7 +44,7 @@ const App = () => {
         <Sidebar />
         <div className="flex justify-center items-center">
           <div className="w-full sm:w-full pl-3 mt-2 items-center">
-            <div className="bg-gray-800 text-white">
+            <div className="bg-gray-900 text-white">
               <div className="p-4">
                 <div className='flex justify-center'>
                   <div className='ring ml-2 mr-10'></div>
