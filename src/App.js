@@ -7,20 +7,29 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 const App = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentDogsIndex, setCurrentDogsIndex] = useState(0);
   const images = ["images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg"];
+  const dogs = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg"];
 
   const goToPreviousSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
+  const goToPreviousDogs = () => {
+    setCurrentDogsIndex((prevIndex) => (prevIndex === 0 ? dogs.length - 1 : prevIndex - 1));
+  }
 
   const goToNextSlide = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
+  const goToNextDogs = () => {
+    setCurrentDogsIndex((prevIndex) => (prevIndex === dogs.length - 1 ? 0 : prevIndex + 1));
+  }
 
   useEffect(() => {
     const interval = setInterval(goToNextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+    const interval2 = setInterval(goToNextDogs, 4000); // Change slide every 3 seconds (adjust as needed)
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval, interval2);
   }, []);
 
   return (
@@ -68,6 +77,24 @@ const App = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
+
+
+        <div className="w-full sm:w-auto pl-3 mt-2">
+            <div className="bg-gray-800 text-white ">
+            <span className="text    mb-2">Ottoman Dogs</span>
+
+              <div className="p-4 flex">
+                <button onClick={goToPreviousDogs}  ><MdKeyboardArrowLeft size={29} /></button>
+                <img src={dogs[currentDogsIndex]}  style={{width:'200px' ,height:'auto'}}  alt="dogs" className="  border border-green-500   object-cover mb-4" />
+                <button onClick={goToNextDogs} ><MdKeyboardArrowRight size={29} /></button>
+
+
+              </div>
+              <p className="text-sm mb-2 text-yellow-200">Slide {currentDogsIndex + 1} of {dogs.length}</p>
+
+            </div>
+          </div>
+          
 
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white">
