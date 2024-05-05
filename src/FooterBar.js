@@ -16,7 +16,7 @@ const FooterBar = () => {
       <p className="text-sm mb-0">NAIROBI</p>
       <p className="text-sm mb-0">ottomansgs@gmail.com</p>
       <p className="text-sm mb-0">Telephone +254-741457805, +254-775144500</p>
-      <p className="text-sm mb-0" style={{ fontSize: '0.8rem' }}>© 2024 Ottoman. All rights reserved.</p>
+      <p className="text-sm mb-0" style={{ fontSize: '0.8rem' }}>© 2024 Ottoman. Powered by Snowpiercers.</p>
 
     </div>
   );
