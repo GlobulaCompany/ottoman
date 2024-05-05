@@ -105,7 +105,7 @@ const About = () => {
 
 
                         <h2 className="text-2xl font-bold mb-4">OTTOMAN SGS DIRECTORS & KEY PERSONNEL</h2>
-                        <h6 style={{color:' #FFD700'}}>GEORGE ONYANGO ODHIAMBO</h6>
+                        <h6 className=' text-yellow-500' >GEORGE ONYANGO ODHIAMBO</h6>
                     <img src="images/georgeMD.jpeg" alt="team" style={{width:'250px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
 
                         <p className="text-sm mb-6">
@@ -121,7 +121,7 @@ const About = () => {
                                 Criminology and Social Work
                         </p> 
 
-                        <h6 style={{color:' #FFD700'}}>JOHN NYAUCHO ONDIEKI</h6>
+                        <h6 className=' text-yellow-500'>JOHN NYAUCHO ONDIEKI</h6>
                         <p className="text-sm mb-6">
                         Mr. Nyauncho has sound knowledge and experience in the implementation and monitoring of
                         compliance processes as well as security audits and investigations. He holds a bachelor’s Degree in
@@ -135,14 +135,14 @@ const About = () => {
                         Ltd
                         </p> 
 
-                        <h6 style={{color:' #FFD700'}}>NELSON NYUNJA</h6>
+                        <h6 className=' text-yellow-500'>NELSON NYUNJA</h6>
                         <p className="text-sm mb-6">
                         Nyunja holds a degree in Economics from Egerton University. He has extensive experience in
                         programme management including strategic planning, Management Information Systems and
                         Financial Management. Currently, Nyunja serves as the Director Finance and Administration at
                         Ottoman Security Services Limited. 
                         </p> 
-                        <h6 style={{color:' #FFD700'}}>BENARD OUMA</h6>
+                        <h6 className=' text-yellow-500'>BENARD OUMA</h6>
                         <p className="text-sm mb-6">
                         Ben has more than 10 years of progressive experience in M&E systems development and
                         implementation, programs evaluation, research, complex data analysis, and reporting. Ben is
@@ -156,7 +156,7 @@ const About = () => {
                         and Business Strategy at Ottoman where he is tasked with driving and guiding the companies’
                         vision, mission, and strategies. 
                         </p> 
-                        <h6 style={{color:' #FFD700'}}>BELINDA NANTAMBI AUGO</h6>
+                        <h6 className=' text-yellow-500'>BELINDA NANTAMBI AUGO</h6>
                         <p className="text-sm mb-6">
                         BELINDA is the Director in charge of Human Resource Management. She has vast experience in
                         accounting, logistics and human Management, having previously worked with Platinum Credits and
@@ -166,14 +166,14 @@ const About = () => {
                         recruitment, training, deployment and payment.
                         She is the lead expert in debt collection and recovery activities. 
                         </p> 
-                        <h6 style={{color:' #FFD700'}}> PAVIN OCHIENG OGUTU</h6>
+                        <h6 className=' text-yellow-500'> PAVIN OCHIENG OGUTU</h6>
                         <p className="text-sm mb-6">
                         PAVINS holds a Diploma in Criminology and Security studies from Mmust. He is in charge of daily
                         appraisals, training, deployment and supervision of the guards on duty. Currently Pavin holds the
                         position of Security Supervisor 1 in the Operations Department. 
                           </p> 
 
-                        <h6 style={{ color: '#FFD700' }}>ALLAN DOUGLAS</h6>
+                        <h6 className=' text-yellow-500'  >ALLAN DOUGLAS</h6>
                         <p className="text-sm mb-6">
                         Allan Douglas is a dedicated member of the Security and Governance Society (SGS) at Ottoman Security. With a background in law enforcement and security management, Allan brings valuable expertise in risk assessment, crisis management, and security strategy development. He is known for his attention to detail and proactive approach to security challenges. Allan is committed to ensuring the safety and security of clients and their assets through comprehensive security solutions and vigilant monitoring.
                         </p>
@@ -188,7 +188,7 @@ const About = () => {
                 </div>
                 
             </div> 
-        <hr style={{ borderColor: '#FFD700' }}></hr>
+        <hr className='border border-yellow-500' ></hr>
 
             <FooterBar />
         </div>

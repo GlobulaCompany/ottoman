@@ -36,7 +36,7 @@ const Team = () => {
                     </div>
                 </div>
             </div> 
-        <hr style={{ borderColor: '#FFD700' }}></hr>
+        <hr className='border border-yellow-500' ></hr>
 
             <FooterBar />
         </div>

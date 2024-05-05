@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useCallback  } from 'react';
 import Sidebar from '../Sidebar';
 import FooterBar from '../FooterBar'; 
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'; 
@@ -9,19 +9,19 @@ const SecurityMeasures = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg"];
   
-    const goToPreviousSlide = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-  
-    const goToNextSlide = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
+    const goToPreviousSlide  = useCallback(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+      }, [images.length]);
+
+    const goToNextSlide = useCallback(() => {
+    setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  }, [images.length]);
   
     useEffect(() => {
       const interval = setInterval(goToNextSlide, 2000); // Change slide every 3 seconds (adjust as needed)
   
       return () => clearInterval(interval);
-    }, []);
+    }, [goToNextSlide]);
   
     return (
         <div className="flex flex-col min-h-screen bg-gray-900">
@@ -76,7 +76,7 @@ const SecurityMeasures = () => {
                     </div>
                 </div>
             </div>
-        <hr style={{ borderColor: '#FFD700' }}></hr>
+        <hr className='border border-yellow-500'></hr>
 
             {/* Footer */}
             <FooterBar />
