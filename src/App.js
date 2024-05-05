@@ -9,7 +9,7 @@ const App = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentDogsIndex, setCurrentDogsIndex] = useState(0);
   const images = ["images/officer4.jpg","images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg","images/officer2.jpeg","images/officer3.jpeg"];
-  const dogs = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg","images/dogs4.jpeg",];
+  const dogs = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg","images/dogs4.jpeg","images/dogs5.jpeg"];
 
   const goToPreviousSlide = useCallback(() => {
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));

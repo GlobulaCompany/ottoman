@@ -7,7 +7,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 const SecurityMeasures = () => {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const images = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg"];
+    const images = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg","images/dogs5.jpeg","images/dogs4.jpeg"];
   
     const goToPreviousSlide  = useCallback(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
