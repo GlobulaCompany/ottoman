@@ -82,15 +82,15 @@ const App = () => {
 
 
 
-          <div className="w-full sm:w-auto pl-3 mt-2">
-            <div className="bg-gray-800 text-white">
-              <div className="p-4">
-            <span className="text    mb-2">Quality service</span>
-
-                <img src="images/officer4.jpg" alt="team" style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
-              </div>
-            </div>
-          </div>
+        <div className="w-full sm:w-auto pl-3 mt-2">
+  <div className="bg-gray-800 text-white">
+    <div className="p-4">
+      <span className="text mb-2">Quality service</span>
+      <p className="text-gray-300 mb-4">We are committed to providing top-notch service to our clients.</p>
+      <img src="images/officer4.jpg" alt="team" style={{ width: '230px', height: 'auto' }} className="border border-green-500 object-cover mb-4" />
+    </div>
+  </div>
+</div>
 
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white">
@@ -146,6 +146,15 @@ const App = () => {
           </div>
           
         </div>
+        
+          <div className="w-fullb bg-gray-800 mt-4 mb-4 flex justify-center items-center">
+            <div className=" bg-gray-800 text-white">
+              <div className="p-4 justify-center items-center">
+                <img src="images/ottomanPlaque.jpg" alt="team" style={{width:'420px', height:'auto'}} className="border border-green-500 object-cover mb-4" />
+              </div>
+            </div>
+          </div>
+
 
         <hr className='border border-yellow-500'></hr>
 
