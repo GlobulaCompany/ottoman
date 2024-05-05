@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import FooterBar from './FooterBar'; 
 import Sidebar from './Sidebar';
 import './App.css';
@@ -8,29 +8,31 @@ const App = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentDogsIndex, setCurrentDogsIndex] = useState(0);
-  const images = ["images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg","images/officer2.jpeg","images/officer3.jpeg"];
+  const images = ["images/officer4.jpg","images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg","images/officer2.jpeg","images/officer3.jpeg"];
   const dogs = ["images/dogs.jpeg", "images/dogs2.jpeg","images/dogs3.jpeg","images/dogs4.jpeg",];
 
-  const goToPreviousSlide = () => {
+  const goToPreviousSlide = useCallback(() => {
     setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-  const goToPreviousDogs = () => {
+  }, [images.length]);
+  
+  const goToPreviousDogs = useCallback(() => {
     setCurrentDogsIndex((prevIndex) => (prevIndex === 0 ? dogs.length - 1 : prevIndex - 1));
-  }
+  }, [dogs.length]);
 
-  const goToNextSlide = () => {
+  const goToNextSlide = useCallback(() => {
     setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
-  const goToNextDogs = () => {
+  }, [images.length]);
+  
+  const goToNextDogs = useCallback(() => {
     setCurrentDogsIndex((prevIndex) => (prevIndex === dogs.length - 1 ? 0 : prevIndex + 1));
-  }
+  }, [dogs.length]);
 
   useEffect(() => {
-    const interval = setInterval(goToNextSlide, 3000); // Change slide every 3 seconds (adjust as needed)
-    const interval2 = setInterval(goToNextDogs, 2000); // Change slide every 3 seconds (adjust as needed)
-
+    const interval = setInterval(goToNextSlide, 3000);  
+    const interval2 = setInterval(goToNextDogs, 2000); 
     return () => clearInterval(interval, interval2);
-  }, []);
+  }, [goToNextSlide, goToNextDogs]);
+
 
   return (
   <div className="flex flex-col min-h-screen">
@@ -83,9 +85,25 @@ const App = () => {
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white">
               <div className="p-4">
-                <img src="images/team.jpeg" alt="team" style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
-                <h5 className="text-xl font-bold mb-2">Team Of Officers</h5>
+            <span className="text    mb-2">Quality service</span>
+
+                <img src="images/officer4.jpg" alt="team" style={{width:'230px' ,height:'auto'}} className=" border border-green-500 object-cover mb-4" />
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full sm:w-auto pl-3 mt-2">
+            <div className="bg-gray-800 text-white">
+              <div className="p-4">
+                  <h5 className="text-xl font-bold mb-2">Team Of Officers</h5>
                 <p className="text-sm mb-4">Ottoman is committed to providing exceptional security services by delivering personalized, high quality and cost effective security solutions that meets the needs of our clients</p>
+             <br></br>
+
+                <img src="images/team.jpeg" alt="team" style={{width:'420px' ,height:'200px'}} className=" border border-green-500 object-cover mb-4" />
+             <br></br>
+
+             <br></br>
+
               </div>
             </div>
           </div>
@@ -113,7 +131,7 @@ const App = () => {
 
         <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white ">
-            <span className="text    mb-2">Ottoman Dogs</span>
+            <span className="text  p-4 mb-2">Ottoman Dogs</span>
 
               <div className="p-4 flex">
                 <button onClick={goToPreviousDogs}  ><MdKeyboardArrowLeft size={29} /></button>
