@@ -18,20 +18,17 @@ const SecurityMeasures = () => {
   }, [images.length]);
   
     useEffect(() => {
-      const interval = setInterval(goToNextSlide, 2000); // Change slide every 3 seconds (adjust as needed)
+      const interval = setInterval(goToNextSlide, 2000);  
   
       return () => clearInterval(interval);
     }, [goToNextSlide]);
   
     return (
         <div className="flex flex-col min-h-screen bg-gray-900">
-            {/* Top bar */}
             <div style={{backgroundColor: '#1a365d'}} className="  flex justify-center fixed top-0 w-full left-1/2 transform -translate-x-1/2">
                 <p className="text-white text-3xl   pt-2">Measures</p>
             </div>
-            {/* Sidebar */}
             <Sidebar />
-            {/* Main content */}
             <div className="flex justify-center items-center mt-8 flex-grow px-4">
                 <div className="w-full sm:w-3/4 pl-8 mt-2">
                     <div className="bg-gray-800 text-white p-4">
@@ -78,7 +75,6 @@ const SecurityMeasures = () => {
             </div>
         <hr className='border border-yellow-500'></hr>
 
-            {/* Footer */}
             <FooterBar />
         </div>
     );
