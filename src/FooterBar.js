@@ -7,7 +7,7 @@ const FooterBar = () => {
     <div className="justify-center  items-center bg-gray-900 text-white py-4 text-center flex flex-col  ">
       
       <AiOutlineHome className="text-white text-3xl mb-2 text-yellow-500" style={{ marginRight: '10px',  }} />
-      <p className="text-sm mb-0">OTTOMAN SECURITY GROUP SERVICE</p>
+      <p className="text-sm mb-0">OTTOMAN SECURITY GROUP SERVICES LTD</p>
       <p className="text-sm mb-0">Your Reliable Security Partner</p>
       <p className="text-sm mb-0">Posta Flats, Kisumu-Kakamega Road</p>
       <p className="text-sm mb-0">P.O Box 3627-40100 </p>
