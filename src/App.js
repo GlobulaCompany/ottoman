@@ -83,7 +83,7 @@ const App = () => {
 
 
         <div className="w-full sm:w-auto pl-3 mt-2">
-          <div className="bg-gray-800 text-white rounded-lg" style={{ boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" }}>
+          <div className="bg-gray-800 text-white rounded-lg" style={{ boxShadow: "1px 7px 6px rgba(0, 0, 0, 0.9)" }}>
             <div className="p-4">
               <span className="text mb-2">Quality service:</span>
               <p className="text-gray-300 mb-4">We are committed to providing top-notch service to our clients.</p>
@@ -93,7 +93,7 @@ const App = () => {
         </div>
 
           <div className="w-full sm:w-auto pl-3 mt-2">
-            <div className="bg-gray-800 text-white rounded-lg" style={{ boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset" }}>
+            <div className="bg-gray-800 text-white rounded-lg" style={{ boxShadow: "1px 7px 6px rgba(0, 0, 0, 0.9)" }}>
               <div className="p-4">
                   <h5 className="text-xl font-bold mb-2">Team Of Officers</h5>
                 <p className="text-sm mb-4">Ottoman is committed to providing exceptional security services by delivering personalized, high quality and cost effective security solutions that meets the needs of our clients</p>
@@ -147,7 +147,7 @@ const App = () => {
           
         </div>
         
-          <div className="w-full bg-gray-800 mt-4 mb-4 p-3 flex justify-center items-center">
+          <div className="w-full bg-gray-800 mt-4 mb-4 p-3 flex justify-center items-center" style={{ boxShadow: "1px 7px 6px rgba(0, 0, 0, 0.9)" }}>
             <div className="bg-gray-800 text-white rounded-lg " style={{ boxShadow: "1px 7px 6px rgba(0, 0, 0, 0.9)" }}>
               <div className="p-4 justify-center items-center rounded-lg  m-2">
                 <img src="images/ottomanPlaque.jpg" alt="team" style={{width:'420px', height:'auto'}} className="border border-green-500 object-cover mb-4 " />
