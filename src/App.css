@@ -1,4 +1,9 @@
- 
+@media only screen and (max-width: 20px) {
+  .pagess {
+    display: none;
+  }
+}
+
 .ring {
   display: flex;
   border: -3px solid #0f9d30; 
