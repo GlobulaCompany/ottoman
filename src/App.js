@@ -112,21 +112,13 @@ const App = () => {
           <div className="w-full sm:w-auto pl-3 mt-2">
             <div className="bg-gray-800 text-white rounded-lg" style={{ boxShadow: "1px 7px 6px rgba(0, 0, 0, 0.9)" }}>
               <div className="p-4">
-                <div className='flex '>
-                  
-                <button onClick={goToPreviousSlide}  ><MdKeyboardArrowLeft size={29} /></button>
-                  <img src={images[currentImageIndex]}  style={{width:'200px' ,height:'auto'}}  alt="officer" className=" rounded-lg  border border-green-500   object-cover mb-4" />
-                <button onClick={goToNextSlide} ><MdKeyboardArrowRight size={29} /></button>
- 
- 
-                </div>
-                <p className="text-sm mb-2 text-yellow-200">Slide {currentImageIndex + 1} of {images.length}</p>
+               
    
 
                 <h5 className="text-xl font-bold mb-2">Guard On Duty</h5>
                 <p className="text-sm mb-4">
-                  
 
+                  
                   <img src={images[currentImageIndex]}  style={{float:'right',width:'200px' ,height:'auto'}}  alt="officer" className=" rounded-lg  border border-green-500   object-cover mb-4" />
  
                    
