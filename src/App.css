@@ -1,18 +1,18 @@
  
  
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Styles for screens between 769px and 1024px wide */
-  .contain {
+  /* .contain {
     display: block;
-  }
-}
+  } */
+/* } */
 
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) { */
   /* Styles for screens wider than 1024px */
-  .contain {
-   display: none;
-  }
-}
+  /* .contain {
+   display: none; */
+  /* } */
+/* } */
 
 
 .ring {
