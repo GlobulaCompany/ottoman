@@ -1,8 +1,19 @@
-@media only screen and (max-width: 20px) {
-  .pagess {
-    display: none;
+ 
+ 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for screens between 769px and 1024px wide */
+  .contain {
+    display: block;
   }
 }
+
+@media screen and (min-width: 1025px) {
+  /* Styles for screens wider than 1024px */
+  .contain {
+   display: none;
+  }
+}
+
 
 .ring {
   display: flex;

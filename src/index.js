@@ -9,6 +9,8 @@ import Security from './pages/Security';
 import Services from './pages/Services';
 import Team from './pages/Team';
 import Testimonials from './pages/Testimonials';
+import SecurityAuditReport from './pages/SecurityAuditReport';
+import IncidentAuditReport from './pages/IncidentAuditReport';
 
 
 ReactDOM.render(
@@ -22,6 +24,8 @@ ReactDOM.render(
   <Route path="/services" element={<Services />} />
   <Route path="/team" element={<Team />} />
   <Route path="/testimonials" element={<Testimonials />} />
+  <Route path="/security-audit-report" element={<SecurityAuditReport />} />
+  <Route path="/incident-audit-report" element={<IncidentAuditReport />} />
   {/* Add more routes for other modules */}
 </Routes>
 

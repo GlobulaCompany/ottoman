@@ -90,6 +90,19 @@ const Sidebar = () => {
             <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>About Us</span>
           </a>
         </li>
+
+        <li className="mb-5">
+          <a href="/security-audit-report" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
+            <AiOutlineInfoCircle size={20} className="mt-2 mr-2 text-yellow-500" />
+            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Security Audit Report</span>
+          </a>
+        </li>
+        <li className="mb-5">
+          <a href="/incident-audit-report" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
+            <AiOutlineInfoCircle size={20} className="mt-2 mr-2 text-yellow-500" />
+            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Incident Audit Report</span>
+          </a>
+        </li>
         
         {/* Add more manual entries for other modules */}
       </ul>
