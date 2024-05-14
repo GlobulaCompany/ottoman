@@ -46,13 +46,13 @@ const App = () => {
         <Sidebar />
         <div className="flex justify-center items-center">
           <div className="w-full sm:w-full pl-3 mt-2 items-center">
-            <div className="bg-gray-900 text-white "   style={{backgroundImage: "url('images/bg7.jpg')"}}>
+            <div className="bg-gray-900 text-white "   style={{backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundPosition:'center',backgroundImage: "url('images/bg7.jpg')"}}>
               <div className="p-4">
                 <div className='flex justify-center'>
                   <div className='ring ml-2 mr-10'></div>
                   <div className='ring ml-2 mr-10'></div>
                   <div className='ring ml-2 mr-10'></div>
-                  <img  src="images/securityLogo.jpeg" alt="piloe" style={{width:'200px',height:'200px'}} className="rounded-full object-cover ml-2 mr-10" />
+                  <img  src="images/securityLogo.jpeg" alt="piloe" style={{ width:'200px',height:'200px'}} className="rounded-full object-cover ml-2 mr-10" />
 
                 </div>
               </div>
