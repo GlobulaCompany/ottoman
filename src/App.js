@@ -34,7 +34,7 @@ const App = () => {
   return (
   <div className="flex flex-col min-h-screen">
     <div className="flex bg-yellow-900 ">
-      <div className="flex-1 bg-gray-900 pl-8  contain">
+      <div className="flex-1 bg-gray-900 pl-8  a">
         <div style={{backgroundColor: '#1a365d'}} className='flex justify-center fixed top-0 w-full left-1/2 transform -translate-x-1/2'>
           <p className="text-white text-1xl font-bold pt-2">OTTOMAN SECURITY</p>
         </div>

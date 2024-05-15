@@ -4,10 +4,8 @@ import { AiOutlineEdit, AiOutlineTeam, AiOutlineHeart } from 'react-icons/ai';
 import { FiMessageSquare, FiFolder } from 'react-icons/fi';
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
-import { RiSettings4Line } from 'react-icons/ri';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { AiFillAlert } from 'react-icons/ai';
-import { AiFillAndroid } from 'react-icons/ai';
 
  
 
@@ -82,7 +80,7 @@ const Sidebar = () => {
         </li>
         <li className="mb-5">
           <a href="/faqs" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <RiSettings4Line size={20} className="mt-2 mr-2 text-yellow-500" />
+            <AiFillAlert size={20} className="mt-2 mr-2 text-yellow-500" />
             <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>FAQs</span>
           </a>
         </li>
@@ -92,19 +90,7 @@ const Sidebar = () => {
             <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>About Us</span>
           </a>
         </li>
-
-        <li className="mb-5">
-          <a href="/security-audit-report" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <AiFillAlert size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Security Audit Report</span>
-          </a>
-        </li>
-        <li className="mb-5">
-          <a href="/incident-audit-report" className="flex mt-2 pb-1 hover:bg-gray-900 focus:bg-dark-900 rounded-lg transition duration-300 ease-in-out">
-            <AiFillAndroid size={20} className="mt-2 mr-2 text-yellow-500" />
-            <span className={`mt-2 ${open ? 'block' : 'hidden'} transition-opacity duration-300 ease-in-out opacity-${open ? '100' : '0'} ml-${open ? '2' : '0'}`}>Incident Audit Report</span>
-          </a>
-        </li>
+ 
         
         {/* Add more manual entries for other modules */}
       </ul>
