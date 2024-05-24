@@ -8,7 +8,7 @@ const App = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentDogsIndex, setCurrentDogsIndex] = useState(0);
-  const images = ["images/officer4.jpg","images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg","images/officer2.jpeg","images/officer3.jpeg","images/officer6.jpeg"];
+  const images = ["images/officer4.jpeg","images/officer.jpeg", "images/womanOfficer.jpeg","images/dutyGuards.jpeg","images/officer2.jpeg","images/officer3.jpeg","images/officer6.jpeg"];
   const dogs = ["images/dogs.jpeg",  "images/dogs3.jpeg","images/dogs4.jpeg","images/dogs5.jpeg"];
 
    
@@ -43,7 +43,7 @@ const App = () => {
         <Sidebar />
         <div className="flex justify-center items-center">
           <div className="w-full sm:w-full pl-3 mt-2 items-center">
-            <div className="bg-gray-900 text-white "   style={{backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundPosition:'center',backgroundImage: "url('images/bg7.jpg')"}}>
+            <div className="bg-gray-900 text-white "   style={{backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundPosition:'center',backgroundImage: "url('images/bg7.jpeg')"}}>
               <div className="p-4">
                 <div className='flex justify-center'>
                   <div className='ring ml-2 mr-10'></div>
@@ -84,7 +84,7 @@ const App = () => {
             <div className="p-4">
               <span className="text mb-2">Quality service:</span>
               <p className="text-gray-300 mb-4">We are committed to providing top-notch service to our clients.</p>
-              <img src="images/officer4.jpg" alt="team" style={{ width: '230px', height: 'auto' }} className="rounded-lg border border-green-500 object-cover mb-4" />
+              <img src="images/officer4.jpeg" alt="team" style={{ width: '230px', height: 'auto' }} className="rounded-lg border border-green-500 object-cover mb-4" />
             </div>
           </div>
         </div>
